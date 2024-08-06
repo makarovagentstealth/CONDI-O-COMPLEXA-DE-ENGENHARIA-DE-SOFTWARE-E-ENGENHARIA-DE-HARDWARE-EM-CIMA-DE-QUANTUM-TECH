@@ -1,0 +1,9 @@
+def generate_quantum_vector(size):
+    quantum_vector = []
+    for _ in range(size):
+        state = '101'  # Estado quântico definido
+        quantum_vector.append(state)
+    return quantum_vector
+
+quantum_vector = generate_quantum_vector(size)
+print("Vetor por Eixo Quântico 101:", quantum_vector)
