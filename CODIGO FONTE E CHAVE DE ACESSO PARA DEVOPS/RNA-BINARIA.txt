@@ -1,0 +1,13 @@
+def rna_to_binary(rna_sequence):
+    binary_mapping = {
+        'A': '00',
+        'U': '01',
+        'C': '10',
+        'G': '11'
+    }
+    binary_sequence = ''.join([binary_mapping[nucleotide] for nucleotide in rna_sequence])
+    return binary_sequence
+
+rna_sequence = "AUGCUU"  # Exemplo de sequência de RNA
+binary_rna = rna_to_binary(rna_sequence)
+print("RNA Binário:", binary_rna)
